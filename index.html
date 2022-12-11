@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Practica Juliana Diaz</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class= "total">
+        <div class= "totalSpent">
+            <h1>CONTROL DE GASTO</h1>
+        </div>
+        <br>
+
+        <section class= "money-list">
+
+            <div class="moneyMainItem" id= "ActualSpent">
+                <p id="displayTotal">TU AHORRO 0€</p>
+            </div>
+
+            <div class= "ingressspent">
+                <div id= "AddIngr"> 
+                    <p id="displayInputs">INGRESOS 0€ </p>  
+                </div>
+
+                <div id= "AddSpent">
+                    <p id="displaySpends">GASTOS 0€</p>
+                </div>
+            </div>
+        </section>
+        <br>
+    </div>
+
+    <div class = "historial">        
+        <div>
+            <p>Historial</p>
+        </div>
+        <hr>
+        <section class="spents-list"></section>
+    </div>
+    
+    <br>
+
+    <br>
+
+    <div class="form">
+        <div>
+            <p class="textFormEnc">Añadir nueva transacion</p>
+        </div> 
+        <hr>
+        <br>
+
+        <div>   
+            <form id="createSpentForm" novalidate>
+                <p>Concepto</p>
+                <input id="conceptText" type="text" placeholder="Añade Concepto" />
+                <br />
+                <p>Cantidad</p>
+                <p>(negativo - gasto, positivo - ingreso)</p>
+                <input id="amountText" type="text" placeholder="Introduce Cantidad" />
+                <br>
+                <br>
+                <button type="submit" class = "saveSpent" id="saveSpent">Añadir transaccion</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

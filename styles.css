@@ -1,0 +1,68 @@
+.total {
+    min-width: 360px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.totalSpent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.money-list {
+    font-size: large ;
+
+}
+  
+.spent-list {
+    border: solid 1px rgb(143, 5, 5);
+    border-radius: 1rem;
+    padding: 1rem;
+    
+  }
+  
+.historial {
+    min-width: 360px;
+    max-width: 500px;
+    margin: auto;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.ingressspent {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.form {
+    min-width: 360px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.textFormEnc {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.saveSpent {
+
+    margin: auto;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    box-sizing:content-box;
+}
+
+.spentItemElement {
+    display: flex;
+    justify-content: space-between;
+
+}
+.moneyMainItem{
+    font-weight: 700;
+    font-size: larger;
+}
