@@ -10,6 +10,4 @@ Necesitamos desarrollar una web que nos ayude a gestionar nuestros ingresos y ga
 ## Requisitos opcionales
 1. Si cerramos la web y volvemos a entrar, tenemos que recuperar todos los gastos e ingresos que habíamos introducido, así como el ahorro total.
 
-## Ejemplo
-![Imagen inicial](./example.jpeg)
-![Gastos introducidos](./example2.jpeg)
+
