@@ -3,9 +3,14 @@ let mySpent= [];
 let objectFromLocalStorageAsString = localStorage.getItem('savedText');
 mySpent = JSON.parse(objectFromLocalStorageAsString);
 
-drawMoneys(mySpent)
+if (mySpent === null){
+  mySpent = [];
+}
 
-drawQuantity(mySpent)
+
+drawMoneys(mySpent);
+
+drawQuantity(mySpent);
 
 const createSpentFormElement = document.querySelector("#createSpentForm");
 
@@ -36,9 +41,9 @@ localStorage.setItem("savedText", mySpentJson);
   textAreaElement.value = "";
 
 
-  drawMoneys(mySpent)
+  drawMoneys(mySpent);
 
-  drawQuantity(mySpent)
+  drawQuantity(mySpent);
 
 })
 
@@ -48,9 +53,9 @@ function deleteValue(id){
   mySpent.splice(id, 1);
   //console.log(mySpent)
 
-  drawMoneys(mySpent)
+  drawMoneys(mySpent);
 
-  drawQuantity(mySpent)
+  drawQuantity(mySpent);
 
   const mySpentJson = JSON.stringify(mySpent);
   localStorage.setItem("savedText", mySpentJson);
@@ -95,7 +100,7 @@ function drawQuantity(moneys) {
     moneyListElements.removeChild(moneyListElements.firstChild);
   }
 
-  mySpent.forEach((element) => { 
+  moneys.forEach((element) => { 
     totalMoney = totalMoney + element.quantity;
     if (element.quantity > 0) {
       totalaAddMoney += element.quantity;
